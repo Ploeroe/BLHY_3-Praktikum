@@ -11,78 +11,77 @@ public class CubeKursi : MonoBehaviour
     void Start()
     {
         Mesh mesh = new Mesh();
-        var kursiMain = new Vector3[46];
+        var kursi = new Vector3[46];
 
         //Badan Kursi Bagian Belakang
-        kursiMain[0] = new Vector3(2f,0f,2f);
-        kursiMain[1] = new Vector3(2f,-1f,2f);
-        kursiMain[2] = new Vector3(-2f,-1f,2f);
-        kursiMain[3] = new Vector3(-2f,0f,2f);
+        kursi[0] = new Vector3(2f,0f,2f);
+        kursi[1] = new Vector3(2f,-1f,2f);
+        kursi[2] = new Vector3(-2f,-1f,2f);
+        kursi[3] = new Vector3(-2f,0f,2f);
 
         //Badan Kursi Bagian Depan
-        kursiMain[4] = new Vector3(2f,0f,-2f);
-        kursiMain[5] = new Vector3(2f,-1f,-2f);
-        kursiMain[6] = new Vector3(-2f,-1f,-2f);
-        kursiMain[7] = new Vector3(-2f,0f,-2f);
+        kursi[4] = new Vector3(2f,0f,-2f);
+        kursi[5] = new Vector3(2f,-1f,-2f);
+        kursi[6] = new Vector3(-2f,-1f,-2f);
+        kursi[7] = new Vector3(-2f,0f,-2f);
     
         //Senderan Kursi Bagian Belakang
-        kursiMain[8] = new Vector3(-2f,2f,-2f);
-        kursiMain[9] = new Vector3(2f,2f,-2f);
+        kursi[8] = new Vector3(-2f,2f,-2f);
+        kursi[9] = new Vector3(2f,2f,-2f);
 
         //Senderan Kursi Bagian Depan
-        kursiMain[10] = new Vector3(-2f,2f,-1f);
-        kursiMain[11] = new Vector3(-2f,0f,-1f);
-        kursiMain[12] = new Vector3(2f,0f,-1f);
-        kursiMain[13] = new Vector3(2f,2f,-1f);
+        kursi[10] = new Vector3(-2f,2f,-1f);
+        kursi[11] = new Vector3(-2f,0f,-1f);
+        kursi[12] = new Vector3(2f,0f,-1f);
+        kursi[13] = new Vector3(2f,2f,-1f);
 
         //Kaki Kursi Bagian Belakang Kiri
-        // kursiMain[14] = new Vector3(-2f,-1f,-2f);//6
-        kursiMain[14] = new Vector3(-2f,-2f,-2f);
-        kursiMain[15] = new Vector3(-1f,-2f,-2f);
-        kursiMain[16] = new Vector3(-1f,-1f,-2f);
+        // kursi[14] = new Vector3(-2f,-1f,-2f);//6
+        kursi[14] = new Vector3(-2f,-2f,-2f);
+        kursi[15] = new Vector3(-1f,-2f,-2f);
+        kursi[16] = new Vector3(-1f,-1f,-2f);
 
-        kursiMain[17] = new Vector3(-2f,-1f,-1f);
-        kursiMain[18] = new Vector3(-2f,-2f,-1f);
-        kursiMain[19] = new Vector3(-1f,-2f,-1f);
-        kursiMain[20] = new Vector3(-1f,-1f,-1f);
+        kursi[17] = new Vector3(-2f,-1f,-1f);
+        kursi[18] = new Vector3(-2f,-2f,-1f);
+        kursi[19] = new Vector3(-1f,-2f,-1f);
+        kursi[20] = new Vector3(-1f,-1f,-1f);
 
 
         //Kaki Kursi Bagian Belakang Kanan
-        kursiMain[21] = new Vector3(1f,-1f,-2f);
-        kursiMain[22] = new Vector3(1f,-2f,-2f);
-        kursiMain[23] = new Vector3(2f,-2f,-2f);
-        // kursiMain[25] = new Vector3(2f,-1f,-2f);//5
+        kursi[21] = new Vector3(1f,-1f,-2f);
+        kursi[22] = new Vector3(1f,-2f,-2f);
+        kursi[23] = new Vector3(2f,-2f,-2f);
+        // kursi[25] = new Vector3(2f,-1f,-2f);//5
 
-        kursiMain[24] = new Vector3(1f,-1f,-1f);
-        kursiMain[25] = new Vector3(1f,-2f,-1f);
-        kursiMain[26] = new Vector3(2f,-2f,-1f);
-        kursiMain[27] = new Vector3(2f,-1f,-1f);
+        kursi[24] = new Vector3(1f,-1f,-1f);
+        kursi[25] = new Vector3(1f,-2f,-1f);
+        kursi[26] = new Vector3(2f,-2f,-1f);
+        kursi[27] = new Vector3(2f,-1f,-1f);
 
         //Kaki Kursi Bagian Depan Kiri
+        kursi[28] = new Vector3(-2f,-1f,1f);
+        kursi[29] = new Vector3(-2f,-2f,1f);
+        kursi[30] = new Vector3(-1f,-2f,1f);
+        kursi[31] = new Vector3(-1f,-1f,1f);
 
-        kursiMain[28] = new Vector3(-2f,-1f,1f);
-        kursiMain[29] = new Vector3(-2f,-2f,1f);
-        kursiMain[30] = new Vector3(-1f,-2f,1f);
-        kursiMain[31] = new Vector3(-1f,-1f,1f);
-
-        // kursiMain[34] = new Vector3(-2f,-1f,2f);2
-        kursiMain[32] = new Vector3(-2f,-2f,2f);
-        kursiMain[33] = new Vector3(-1f,-2f,2f);
-        kursiMain[34] = new Vector3(-1f,-1f,2f);
+        // kursi[34] = new Vector3(-2f,-1f,2f);2
+        kursi[32] = new Vector3(-2f,-2f,2f);
+        kursi[33] = new Vector3(-1f,-2f,2f);
+        kursi[34] = new Vector3(-1f,-1f,2f);
 
         //Kaki Kursi Bagian Depan Kanan
 
-        kursiMain[35] = new Vector3(1f,-1f,1f);
-        kursiMain[36] = new Vector3(1f,-2f,1f);
-        kursiMain[37] = new Vector3(2f,-2f,1f);
-        kursiMain[38] = new Vector3(2f,-1f,1f);
+        kursi[35] = new Vector3(1f,-1f,1f);
+        kursi[36] = new Vector3(1f,-2f,1f);
+        kursi[37] = new Vector3(2f,-2f,1f);
+        kursi[38] = new Vector3(2f,-1f,1f);
 
-        kursiMain[39] = new Vector3(1f,-1f,2f);
-        kursiMain[40] = new Vector3(1f,-2f,2f);
-        kursiMain[41] = new Vector3(2f,-2f,2f);
-        // kursiMain[45] = new Vector3(2f,-1f,2f);//1
+        kursi[39] = new Vector3(1f,-1f,2f);
+        kursi[40] = new Vector3(1f,-2f,2f);
+        kursi[41] = new Vector3(2f,-2f,2f);
+        // kursi[45] = new Vector3(2f,-1f,2f);//1
 
-        mesh.vertices = kursiMain;
+        mesh.vertices = kursi;
 
         mesh.triangles = new int[]{
             2, 1, 0,
