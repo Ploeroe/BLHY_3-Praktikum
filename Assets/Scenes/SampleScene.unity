@@ -5240,7 +5240,7 @@ Transform:
   m_GameObject: {fileID: 890051645}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 29, y: -13, z: 0}
-  m_LocalScale: {x: 30, y: 2, z: 40}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 180165327}
@@ -11389,7 +11389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034483568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 15, z: 40}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11408,7 +11408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f867559466046c446a7a6a69e2bbc9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubeMaterial: {fileID: 2100000, guid: 5985b45d114ef63449c081b212d97abd, type: 2}
+  BackdropMaterial: {fileID: 2100000, guid: 02c9301a45248db47b31edefb9cc2aaf, type: 2}
 --- !u!23 &2034483571
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11429,7 +11429,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5985b45d114ef63449c081b212d97abd, type: 2}
+  - {fileID: 2100000, guid: 02c9301a45248db47b31edefb9cc2aaf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
