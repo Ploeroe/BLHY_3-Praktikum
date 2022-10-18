@@ -6,18 +6,22 @@ public class CubeBackdrop : MonoBehaviour
 {
 // Declare Material to be reconized in the Inspector
     [SerializeField]
-    public Material cubeMaterial;
+    public Material BackdropMaterial;
 
     // Declaring and initializing values for our mesh
     float width = 1.0f;
     float height = 1.0f;
     float thick = 1.0f;
 
+    Texture BackdropTexture;
+
     // Start is called before the first frame update
     void Start()
     {
         Mesh mesh = new Mesh();
         var vertices = new Vector3[8];
+        var uvs = new Vector2[vertices.Length];
+        BackdropTexture = Resources.Load<Texture>("Textures/Backdrop");
 
         //First Layer of 4-Vertices Quad
         vertices[0] = new Vector3(-width, -height, thick);
@@ -25,13 +29,34 @@ public class CubeBackdrop : MonoBehaviour
         vertices[2] = new Vector3(width, height, thick);
         vertices[3] = new Vector3(width, -height, thick);
 
+        // //uvs for texture the first layer
+        // uvs[0] = new Vector2(1.0f, 0.0f);
+        // uvs[1] = new Vector2(1.0f, 1.0f);
+        // uvs[2] = new Vector2(0.0f, 1.0f);
+        // uvs[3] = new Vector2(0.0f, 0.0f);
+        uvs[0] = new Vector2(0.0f, 0.5f);
+        uvs[1] = new Vector2(0.25f, 0.5f);
+        uvs[2] = new Vector2(0.0f, 0.0f);
+        uvs[3] = new Vector2(0.25f, 0.0f);
+
         //Second Layer of 4-Vertices Quad
         vertices[4] = new Vector3(-width, -height, -thick);
         vertices[5] = new Vector3(-width, height, -thick);
         vertices[6] = new Vector3(width, height, -thick);
         vertices[7] = new Vector3(width, -height, -thick);
-    
+
+        //uvs for texture the second layer
+        // uvs[4] = new Vector2(1.0f, 0.0f);
+        // uvs[5] = new Vector2(1.0f, 1.0f);
+        // uvs[6] = new Vector2(0.0f, 1.0f);
+        // uvs[7] = new Vector2(0.0f, 0.0f);
+        uvs[4] = new Vector2(0.25f, 0.5f);
+        uvs[5] = new Vector2(0.5f, 0.5f);
+        uvs[6] = new Vector2(0.25f, 0.0f);
+        uvs[7] = new Vector2(0.5f, 0.0f);
+
         mesh.vertices = vertices;
+        mesh.uv = uvs;
 
         mesh.triangles = new int[]{
             2, 1, 0,
@@ -47,8 +72,9 @@ public class CubeBackdrop : MonoBehaviour
             1, 5, 4,
             4, 0, 1  //Sixth Face
         };
+        mesh.RecalculateNormals();
         GetComponent<MeshFilter>().mesh = mesh;
 
-        GetComponent<MeshRenderer>().material = cubeMaterial;
+        GetComponent<MeshRenderer>().material = BackdropMaterial;
     }
 }
