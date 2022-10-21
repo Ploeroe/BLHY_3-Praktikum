@@ -22,7 +22,7 @@ public class CubeNeckMonitor : MonoBehaviour
     var vertices = new Vector3[24];
     var uvs = new Vector2[vertices.Length];
 
-    CubeNeckMonitorTexture = Resources.Load<Texture>("Textures/Carpet");
+    CubeNeckMonitorTexture = Resources.Load<Texture>("Textures/Leher");
 
         vertices[0] = new Vector3(width, height, thick);
         vertices[1] = new Vector3(width, -height, thick);

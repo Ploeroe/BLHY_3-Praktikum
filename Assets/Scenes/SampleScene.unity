@@ -9536,7 +9536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4dd8c0f3316df94bb759a1fe33bddee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CubeNeckMonitorMaterial: {fileID: 2100000, guid: c2366d7097029584084d07f6add5baf0, type: 2}
+  CubeNeckMonitorMaterial: {fileID: 2100000, guid: fc2754d5b107e0a449505509195483af, type: 2}
 --- !u!23 &1630682494
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9557,7 +9557,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c2366d7097029584084d07f6add5baf0, type: 2}
+  - {fileID: 2100000, guid: fc2754d5b107e0a449505509195483af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10920,7 +10920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4dd8c0f3316df94bb759a1fe33bddee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CubeNeckMonitorMaterial: {fileID: 2100000, guid: 5985b45d114ef63449c081b212d97abd, type: 2}
+  CubeNeckMonitorMaterial: {fileID: 2100000, guid: 3e2d0d35a637799469632d9032450441, type: 2}
 --- !u!23 &1924474595
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10941,7 +10941,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5985b45d114ef63449c081b212d97abd, type: 2}
+  - {fileID: 2100000, guid: 3e2d0d35a637799469632d9032450441, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11766,7 +11766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4dd8c0f3316df94bb759a1fe33bddee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CubeNeckMonitorMaterial: {fileID: 2100000, guid: c2366d7097029584084d07f6add5baf0, type: 2}
+  CubeNeckMonitorMaterial: {fileID: 2100000, guid: fc2754d5b107e0a449505509195483af, type: 2}
 --- !u!23 &2093922363
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11787,7 +11787,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c2366d7097029584084d07f6add5baf0, type: 2}
+  - {fileID: 2100000, guid: fc2754d5b107e0a449505509195483af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11991,7 +11991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4dd8c0f3316df94bb759a1fe33bddee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CubeNeckMonitorMaterial: {fileID: 2100000, guid: 5985b45d114ef63449c081b212d97abd, type: 2}
+  CubeNeckMonitorMaterial: {fileID: 2100000, guid: 3e2d0d35a637799469632d9032450441, type: 2}
 --- !u!23 &2100218466
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12012,7 +12012,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5985b45d114ef63449c081b212d97abd, type: 2}
+  - {fileID: 2100000, guid: 3e2d0d35a637799469632d9032450441, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

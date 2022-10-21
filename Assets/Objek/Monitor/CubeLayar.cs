@@ -22,7 +22,7 @@ public class CubeLayar : MonoBehaviour
     var vertices = new Vector3[24];
     var uvs = new Vector2[vertices.Length];
 
-    CubeLayarTexture = Resources.Load<Texture>("Textures/Carpet");
+    CubeLayarTexture = Resources.Load<Texture>("Textures/Screen");
 
         vertices[0] = new Vector3(width, height, thick);
         vertices[1] = new Vector3(width, -height, thick);
