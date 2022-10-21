@@ -38,7 +38,7 @@ public class CubeMeja : MonoBehaviour
         uvs[6] = new Vector2(0.0f, 1.0f);
         uvs[7] = new Vector2(0.0f, 0.0f); 
 
-        //Kaki Meja Bagian Belakang Kiri
+        //Kaki Meja
         meja[8] = new Vector3(-2f,0f,-2f);
         meja[9] = new Vector3(-2f,-2f,-2f);
         meja[10] = new Vector3(-1f,-2f,-2f);
@@ -59,7 +59,7 @@ public class CubeMeja : MonoBehaviour
         uvs[14] = new Vector2(0.0f, 1.0f);
         uvs[15] = new Vector2(0.0f, 0.0f);
 
-        //Kaki Meja Bagian Belakang Kanan
+        //Kaki Meja
         meja[16] = new Vector3(1f,0f,-2f);
         meja[17] = new Vector3(1f,-2f,-2f);
         meja[18] = new Vector3(2f,-2f,-2f);
@@ -80,7 +80,7 @@ public class CubeMeja : MonoBehaviour
         uvs[22] = new Vector2(0.0f, 1.0f);
         uvs[23] = new Vector2(0.0f, 0.0f);
 
-        //Kaki Meja Bagian Depan Kiri
+        //Kaki Meja
         meja[24] = new Vector3(-2f,0f,1f);
         meja[25] = new Vector3(-2f,-2f,1f);
         meja[26] = new Vector3(-1f,-2f,1f);
@@ -101,7 +101,7 @@ public class CubeMeja : MonoBehaviour
         uvs[30] = new Vector2(0.0f, 1.0f);
         uvs[31] = new Vector2(0.0f, 0.0f);
 
-        //Kaki Meja Bagian Depan Kanan
+        //Kaki Meja
         meja[32] = new Vector3(1f,0f,1f);
         meja[33] = new Vector3(1f,-2f,1f);
         meja[34] = new Vector3(2f,-2f,1f);
