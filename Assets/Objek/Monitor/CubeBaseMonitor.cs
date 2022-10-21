@@ -22,7 +22,7 @@ public class CubeBaseMonitor : MonoBehaviour
     var vertices = new Vector3[24];
     var uvs = new Vector2[vertices.Length];
 
-    CubeBaseTexture = Resources.Load<Texture>("Textures/Carpet");
+    CubeBaseTexture = Resources.Load<Texture>("Textures/BaseMon");
 
         vertices[0] = new Vector3(width, height, thick);
         vertices[1] = new Vector3(width, -height, thick);
